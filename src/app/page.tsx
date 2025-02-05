@@ -14,6 +14,7 @@ import Image from 'next/image'
 export const metadata: Metadata = {
   description:
     'Ncmaz Fse - Blog, News and Magazine Full Site Editing WordPress Block theme',
+  title: 'Ncmaz Fse Theme',
 }
 
 function Hero() {
@@ -97,19 +98,19 @@ function BentoSection() {
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
         <BentoCard
-          eyebrow="Bookmarks"
-          title="The collection of articles you have saved."
-          description="The collection of articles you have saved to read later. Save time searching,easily access important information anytime.."
+          eyebrow="Video/Audio Player"
+          title="Video/audio/podcast live player."
+          description="Video/audio/podcast live player. Video player supports landscape and portrait ratios."
           graphic={
-            <div className="h-80 bg-[url(/screenshots/reading-list.png)] bg-[size:1100px_650px] bg-[left_-10px_top_-88px] bg-no-repeat" />
+            <div className="h-80 bg-[url(/screenshots/music.png)] bg-[size:1100px_680px] bg-[left_-10px_top_-88px] bg-no-repeat" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
         />
         <BentoCard
-          eyebrow="Wishlist"
-          title="The collection of your favorite articles."
-          description="The collection of your favorite articles. Rediscover creative ideas, touching stories, and valuable lessons whenever you want."
+          eyebrow="Wishlist/Bookmarks"
+          title="The collection of your favorite/saved articles."
+          description="The collection of your favorite/saved articles. Rediscover creative ideas, touching stories, and valuable lessons whenever you want."
           graphic={
             <div className="absolute inset-0 bg-[url(/screenshots/wishlist.png)] bg-[size:1100px_650px] bg-[left_-10px_top_-85px] bg-no-repeat" />
           }
@@ -183,14 +184,6 @@ function Includeds() {
                   <strong>Key Features</strong> —
                   <ul>
                     <li>
-                      Provides accessible, user friendly experience for website
-                      visitors.
-                    </li>
-                    <li>
-                      Content editors love how easy, yet flexible it is to work
-                      with.
-                    </li>
-                    <li>
                       Administrators and developers value its customizability
                       and clean code.
                     </li>
@@ -202,12 +195,24 @@ function Includeds() {
                     <li>
                       Wishlist - post, custom post type, page, comment,...
                     </li>
-
+                    <li>Video/audio/podcast live player.</li>
+                    <li>
+                      Video player supports landscape and portrait ratios.
+                    </li>
+                    <li>Dark mode & ready for RTL version.</li>
                     <li>
                       Search page, archive page,... have great search and
                       filter.
                     </li>
-                    <li>Ready for RTL version, Woocommerce.</li>
+                    <li>Woocommerce Support.</li>
+                    <li>
+                      Provides accessible, user friendly experience for website
+                      visitors.
+                    </li>
+                    <li>
+                      Content editors love how easy, yet flexible it is to work
+                      with.
+                    </li>
                   </ul>
                 </div>
                 <div>
@@ -350,35 +355,6 @@ function Includeds() {
                 />
               </a>
               <a
-                href="https://ncmaz-fse.booliitheme.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src="/screenshots/cta.png"
-                  width={3328}
-                  height={1910}
-                  alt="Picture of the CTA section"
-                  className="aspect-[3328/1910] rounded-lg bg-slate-200 ring-1 ring-slate-900/10"
-                  sizes="(min-width: 1024px) 35vw, ((min-width: 700px) and (max-width: 1024px)) 50vw, 100vw"
-                />
-              </a>
-
-              <a
-                href="https://ncmaz-fse.booliitheme.com/hello-world/#comments"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src="/screenshots/comments.png"
-                  width={3310}
-                  height={1914}
-                  alt="Picture of the comments"
-                  className="aspect-[3310/1914] rounded-lg bg-slate-200 ring-1 ring-slate-900/10"
-                  sizes="(min-width: 1024px) 35vw, ((min-width: 700px) and (max-width: 1024px)) 50vw, 100vw"
-                />
-              </a>
-              <a
                 href="https://ncmaz-fse.booliitheme.com/demo-article-single-2-with-sidebar-template/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -390,6 +366,35 @@ function Includeds() {
                   alt="Picture of the single article 2 with sidebar"
                   className="aspect-[3328/1910] rounded-lg bg-slate-200 ring-1 ring-slate-900/10"
                   sizes="(min-width: 1024px) 35vw, (min-width: 700px) 50vw, 100vw"
+                />
+              </a>
+              <a
+                href="https://ncmaz-fse.booliitheme.com/hello-world/#comments"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/screenshots/comments.png"
+                  width={3310}
+                  height={1914}
+                  alt="Picture of the comments"
+                  className="aspect-[3310/1950] rounded-lg bg-slate-200 ring-1 ring-slate-900/10"
+                  sizes="(min-width: 1024px) 35vw, ((min-width: 700px) and (max-width: 1024px)) 50vw, 100vw"
+                />
+              </a>
+
+              <a
+                href="https://ncmaz-fse.booliitheme.com/home-page-4/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/screenshots/music.png"
+                  width={3128}
+                  height={1910}
+                  alt="Picture of the Music section"
+                  className="aspect-[3328/2050] rounded-lg bg-slate-200 ring-1 ring-slate-900/10"
+                  sizes="(min-width: 1024px) 35vw, ((min-width: 700px) and (max-width: 1024px)) 50vw, 100vw"
                 />
               </a>
             </div>
@@ -593,6 +598,40 @@ function Faqs() {
   )
 }
 
+function CallToAction() {
+  return (
+    <div className="relative pb-16 pt-20 text-center sm:py-24">
+      <hgroup>
+        <Subheading>Get started</Subheading>
+        <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
+          Get started today.
+        </p>
+      </hgroup>
+      <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
+        It’s time to improve your website. Buy the Ncmaz theme so you can feel
+        like you’re doing something productive.
+      </p>
+      <div className="mt-6">
+        <div className="mt-12 flex flex-col items-center justify-center gap-x-6 gap-y-4 sm:flex-row">
+          <Button
+            href="https://themeforest.net/item/ncmaz-blog-magazine-wordpress-theme/34122841"
+            target="_blank"
+          >
+            By theme
+          </Button>
+          <Button
+            variant="secondary"
+            href="https://ncmaz-fse.booliitheme.com/"
+            target="_blank"
+          >
+            Live demo
+          </Button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export default function Home() {
   return (
     <div className="overflow-hidden">
@@ -602,6 +641,13 @@ export default function Home() {
           <FeatureSection />
           <BentoSection />
         </div>
+
+        <Gradient className="relative">
+          <div className="absolute inset-2 rounded-xl bg-white/80" />
+          <Container>
+            <CallToAction />
+          </Container>
+        </Gradient>
 
         <Container className="relative">
           <Includeds />
