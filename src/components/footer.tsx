@@ -25,7 +25,7 @@ function CallToAction() {
             href="https://themeforest.net/item/ncmaz-blog-magazine-wordpress-theme/34122841"
             target="_blank"
           >
-            By theme
+            Buy theme
           </Button>
           <Button
             variant="secondary"
