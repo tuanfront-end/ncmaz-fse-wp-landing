@@ -54,7 +54,7 @@ function Hero() {
               href="https://themeforest.net/item/ncmaz-blog-magazine-wordpress-theme/34122841"
               target="_blank"
             >
-              By theme
+              Buy theme
             </Button>
             <Button
               variant="secondary"
@@ -244,11 +244,11 @@ function Includeds() {
                       Fully accessibility ready WordPress theme, passes WCAG 2.2
                       level AA accessibility requirements
                     </li>
-                    <li>Disabilities friendly, barrier-less</li>
+                    <li>Disability-friendly, barrier-free</li>
                     <li>Keyboard and screen reader friendly</li>
                     <li>With proper headings structure and color contrast</li>
                     <li>Optimized for readability</li>
-                    <li>Responsively adapts to any screen size</li>
+                    <li>Responds adaptively to any screen size</li>
                     <li>
                       Fully localization ready, multilingual, with right-to-left
                       (RTL) languages support
@@ -264,7 +264,7 @@ function Includeds() {
                       Enhancing user experience with block variations
                       (predefined block variants)
                     </li>
-                    <li>Achive page, search page, author page filter</li>
+                    <li>Archive page, search page, author page filter</li>
                   </ul>
                 </div>
                 <div>
@@ -617,7 +617,7 @@ function CallToAction() {
             href="https://themeforest.net/item/ncmaz-blog-magazine-wordpress-theme/34122841"
             target="_blank"
           >
-            By theme
+            Buy theme
           </Button>
           <Button
             variant="secondary"
