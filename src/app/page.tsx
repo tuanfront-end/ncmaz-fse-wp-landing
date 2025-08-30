@@ -7,7 +7,7 @@ import { Link } from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Screenshot } from '@/components/screenshot'
 import { Heading, Subheading } from '@/components/text'
-import { ChevronRightIcon } from '@heroicons/react/16/solid'
+import { ArrowRightIcon } from '@heroicons/react/24/solid'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 
@@ -25,7 +25,7 @@ function Hero() {
         <Navbar
           banner={
             <Link
-              href="https://themeforest.net/item/ncmaz-blog-magazine-wordpress-theme/34122841"
+              href="https://ncmaz-fse.booliitheme.com/fe-submission"
               target="_blank"
               className="flex items-center gap-1 rounded-full bg-fuchsia-950/35 px-3 py-0.5 text-sm/6 font-medium text-white data-[hover]:bg-fuchsia-950/30"
             >
@@ -36,8 +36,8 @@ function Hero() {
                   clipRule="evenodd"
                 ></path>
               </svg>
-              Ncmaz theme on Themeforest
-              <ChevronRightIcon className="size-4" />
+              New &quot;Frontend Submission Editor&quot; block
+              <ArrowRightIcon className="size-4" />
             </Link>
           }
         />
@@ -118,6 +118,15 @@ function BentoSection() {
           className="lg:col-span-3 lg:rounded-tr-4xl"
         />
         <BentoCard
+          eyebrow="FE Submission Editor"
+          title="Frontend submission editor."
+          description="Check out our new ‘Frontend Submission Editor’ block. With its clean and premium design, it’s ready for you to try out."
+          graphic={
+            <div className="absolute inset-0 bg-[url(/screenshots/fe-submission.png)] bg-cover bg-no-repeat" />
+          }
+          className="lg:col-span-2"
+        />
+        <BentoCard
           eyebrow="Customized"
           title="Full site editing functionality."
           description="Ncmaz Fse is customizable barrier-free universal WordPress block theme with full site editing functionality."
@@ -126,17 +135,9 @@ function BentoSection() {
           }
           className="lg:col-span-2 lg:rounded-bl-4xl"
         />
+
         <BentoCard
-          eyebrow="Patterns"
-          title="Multiple Pre-built patterns."
-          description="Multiple header, footer and home layouts to choose from with ability to create your own custom ones"
-          graphic={
-            <div className="absolute inset-0 bg-[url(/screenshots/patterns.png)] bg-cover bg-no-repeat" />
-          }
-          className="lg:col-span-2"
-        />
-        <BentoCard
-          eyebrow="Pages, Posts"
+          eyebrow="Templates, Patterns"
           title="Multiple Pre-built templates."
           description="Multiple page and post templates to choose from with ability to create your own custom ones."
           graphic={
@@ -182,7 +183,7 @@ function Includeds() {
               <div className="space-y-10">
                 <div>
                   <strong>Key Features</strong> —
-                  <ul>
+                  <ol>
                     <li>
                       Administrators and developers value its customizability
                       and clean code.
@@ -191,11 +192,21 @@ function Includeds() {
                       Powerful functionality, great user interaction with
                       WordPress Interactive API.
                     </li>
+                    <li>
+                      <strong>
+                        Clean and premium design &quot;Frontend submission
+                        editor&quot;.
+                      </strong>
+                    </li>
                     <li>Bookmark - post, custom post type, page...</li>
                     <li>
                       Wishlist - post, custom post type, page, comment,...
                     </li>
-                    <li>Video/audio/podcast live player.</li>
+                    <li>
+                      <strong>
+                        Video/audio/podcast &quot;live player&quot;.
+                      </strong>
+                    </li>
                     <li>
                       Video player supports landscape and portrait ratios.
                     </li>
@@ -213,7 +224,7 @@ function Includeds() {
                       Content editors love how easy, yet flexible it is to work
                       with.
                     </li>
-                  </ul>
+                  </ol>
                 </div>
                 <div>
                   <strong>Full site editing (FSE) </strong> —
@@ -394,6 +405,21 @@ function Includeds() {
                   height={1910}
                   alt="Picture of the Music section"
                   className="aspect-[3328/2050] rounded-lg bg-slate-200 ring-1 ring-slate-900/10"
+                  sizes="(min-width: 1024px) 35vw, ((min-width: 700px) and (max-width: 1024px)) 50vw, 100vw"
+                />
+              </a>
+
+              <a
+                href="https://ncmaz-fse.booliitheme.com/fe-submission"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/screenshots/fe-submission.png"
+                  width={2175}
+                  height={2304}
+                  alt="Picture of the FE submission"
+                  className="aspect-[2175/2304] rounded-lg bg-slate-200 ring-1 ring-slate-900/10"
                   sizes="(min-width: 1024px) 35vw, ((min-width: 700px) and (max-width: 1024px)) 50vw, 100vw"
                 />
               </a>
