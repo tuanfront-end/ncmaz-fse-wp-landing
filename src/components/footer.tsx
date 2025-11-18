@@ -1,6 +1,6 @@
-import { CallToAction } from '@/app/page'
 import { PlusGrid, PlusGridItem, PlusGridRow } from '@/components/plus-grid'
 import { Container } from './container'
+import CallToAction from './cta'
 import { Gradient } from './gradient'
 import { Link } from './link'
 import { Logo } from './logo'
