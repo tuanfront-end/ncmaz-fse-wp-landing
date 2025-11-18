@@ -5,9 +5,7 @@ import { Footer } from '@/components/footer'
 import { Gradient } from '@/components/gradient'
 import { Link } from '@/components/link'
 import { Navbar } from '@/components/navbar'
-import { Screenshot } from '@/components/screenshot'
 import { Heading, Subheading } from '@/components/text'
-import { ArrowRightIcon } from '@heroicons/react/24/solid'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 
@@ -36,18 +34,16 @@ function Hero() {
                   clipRule="evenodd"
                 ></path>
               </svg>
-              New &quot;Frontend Submission Editor&quot; block
-              <ArrowRightIcon className="size-4" />
+              Frontend Submission Editor
             </Link>
           }
         />
         <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 md:pb-48 md:pt-32">
-          <h1 className="font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
+          <h1 className="font-display text-balance text-6xl font-medium tracking-tight text-gray-950 sm:text-7xl/[0.9] md:text-8xl/[0.8] lg:text-9xl/[0.8]">
             Ncmaz Fse Theme.
           </h1>
           <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            Ncmaz Fse - Blog, News and Magazine Full Site Editing WordPress
-            Block theme.
+            Blog, News and Magazine Full Site Editing WordPress Block theme.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
             <Button
@@ -74,14 +70,17 @@ function FeatureSection() {
   return (
     <div className="overflow-hidden">
       <Container className="pb-24">
+        <Subheading>Home Screenshot</Subheading>
         <Heading as="h2" className="max-w-3xl">
           A snapshot of the home page.
         </Heading>
-        <Screenshot
+        <Image
           width={2662}
           height={2062}
+          alt="A snapshot of the home page"
           src="/screenshots/screenshot.png"
-          className="mt-16 h-[36rem] sm:h-auto sm:w-[76rem]"
+          className="mt-8 rounded-2xl shadow-md sm:mt-16"
+          priority
         />
       </Container>
     </div>
@@ -153,7 +152,7 @@ function BentoSection() {
 function Includeds() {
   return (
     <div>
-      <div className="mt-40 w-full sm:mt-36 lg:mt-28">
+      <div className="mt-28 w-full sm:mt-36 lg:mt-28">
         <div className="mx-auto max-w-[40rem] space-y-20 divide-y divide-slate-200 sm:space-y-24 lg:max-w-none lg:space-y-32">
           <section className="grid grid-cols-1 items-baseline gap-x-6 gap-y-10 lg:grid-cols-3">
             <h2 className="text-2xl font-medium tracking-tight text-slate-900">
@@ -624,7 +623,7 @@ function Faqs() {
   )
 }
 
-function CallToAction() {
+export function CallToAction() {
   return (
     <div className="relative pb-16 pt-20 text-center sm:py-24">
       <hgroup>
@@ -633,7 +632,7 @@ function CallToAction() {
           Get started today.
         </p>
       </hgroup>
-      <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
+      <p className="mx-auto mt-6 max-w-sm text-sm/6 text-gray-500">
         It’s time to improve your website. Buy the Ncmaz theme so you can feel
         like you’re doing something productive.
       </p>
@@ -663,7 +662,7 @@ export default function Home() {
     <div className="overflow-hidden">
       <Hero />
       <main>
-        <div className="bg-gradient-to-b from-white from-50% to-gray-100 pb-32 pt-20">
+        <div className="bg-gradient-to-b from-white from-50% to-gray-100 pb-28 pt-20 sm:pb-32">
           <FeatureSection />
           <BentoSection />
         </div>
